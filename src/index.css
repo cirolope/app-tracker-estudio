@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Apple / iOS Dark Theme Color Palette */
+  --bg-color: #000000;
+  --surface-color: rgba(28, 28, 30, 0.7);
+  --surface-hover: rgba(44, 44, 46, 0.8);
+  --text-primary: #FFFFFF;
+  --text-secondary: #EBEBF599;
+  --accent-color: #0A84FF;
+  /* iOS Blue */
+  --success-color: #32D74B;
+  /* iOS Green */
+  --warning-color: #FF9F0A;
+  /* iOS Orange */
+  --danger-color: #FF453A;
+  /* iOS Red */
+
+  --border-radius-lg: 24px;
+  --border-radius-md: 16px;
+  --border-radius-sm: 8px;
+
+  /* Glassmorphism */
+  --glass-border: 1px solid rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* Prevent scrolling for app-like feel */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Base Container */
+#root {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+/* Glass Panels */
+.glass-panel {
+  background: var(--surface-color);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: var(--border-radius-lg);
+  border: var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  padding: 24px;
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 16px 24px;
+  border-radius: var(--border-radius-md);
+  width: 100%;
+}
+
+.btn-primary:active {
+  transform: scale(0.97);
+  opacity: 0.8;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-primary);
+  padding: 16px 24px;
+  border-radius: var(--border-radius-md);
+  border: var(--glass-border);
+}
+
+/* Typography styles */
+h1 {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.37px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 0.36px;
+}
+
+h3 {
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.4;
+  color: var(--text-secondary);
+  letter-spacing: -0.41px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}

@@ -1,0 +1,301 @@
+{
+  "flashcards": [
+    {
+      "question": "¿Cuál es la ecuación de Bernoulli para un fluido incompresible y qué principio representa?",
+      "answer": "$p + \\frac{1}{2} \\rho V^2 = cte$. Representa la conservación de la energía, donde la suma de la presión estática y dinámica se mantiene constante."
+    },
+    {
+      "question": "¿Cuál es la ecuación de Saint Venant (Bernoulli para fluidos compresibles)?",
+      "answer": "$\\frac{\\gamma}{\\gamma - 1} \\frac{p}{\\rho} + \\frac{V^2}{2} = cte$, donde $\\gamma$ es el coeficiente adiabático del gas."
+    },
+    {
+      "question": "¿Cuál es la ecuación de continuidad para un flujo estacionario?",
+      "answer": "$\\rho_1 \\cdot S_1 \\cdot V_1 = \\rho_2 \\cdot S_2 \\cdot V_2$, o $\\rho \\cdot S \\cdot V = cte$. Representa la conservación de la masa."
+    },
+    {
+      "question": "¿Qué tres fuerzas actúan sobre la pala de una hélice en rotación?",
+      "answer": "1. Empuje (hacia adelante). 2. Efecto de torsión (resistencia al giro). 3. Fuerza centrífuga."
+    },
+    {
+      "question": "¿Cómo se define el ángulo de ataque en la pala de una hélice?",
+      "answer": "Es el ángulo formado entre la cuerda de la pala y la dirección del viento relativo local."
+    },
+    {
+      "question": "¿Qué es el Número de Reynolds ($RN$) y qué representa?",
+      "answer": "$RN = \\frac{\\rho \\cdot V \\cdot l}{\\mu}$ o también $RN = \\frac{V \\cdot l}{\\nu}$ (donde $\\nu$ es la viscosidad cinemática). Es un número adimensional que relaciona las fuerzas de inercia (velocidad del fluido) contra las fuerzas viscosas (fricción). Es clave para determinar si el flujo del fluido se comportará de manera laminar o turbulenta."
+    },
+    {
+      "question": "¿Cuál es la condición matemática para el desprendimiento de la capa límite?",
+      "answer": "Sucede cuando el gradiente de velocidad en la pared es nulo: $(\\frac{dV}{dy})_{pared} = 0$, bajo un gradiente de presiones adverso."
+    },
+    {
+      "question": "En la teoría circulatoria, ¿cómo calcula la sustentación ($L'$) el Teorema de Kutta-Joukowski?",
+      "answer": "$L' = \\rho \\cdot V \\cdot \\Gamma$. La sustentación depende linealmente de la densidad, velocidad y la circulación ($\\Gamma$)."
+    },
+    {
+      "question": "¿Qué es el centro aerodinámico (c.a.) y dónde se ubica teóricamente en vuelo subsónico?",
+      "answer": "Es el punto donde el momento de cabeceo ($C_{Mac}$) no cambia con el ángulo de ataque. Se ubica teóricamente al $25\\%$ de la cuerda."
+    },
+    {
+      "question": "En un perfil de curvatura positiva, ¿cómo se mueve el centro de presión (c.p.) al aumentar la sustentación?",
+      "answer": "Se mueve hacia adelante, acercándose al centro aerodinámico (al 25%), pero siempre detrás de él."
+    },
+    {
+      "question": "¿De qué se compone el modelo de torbellinos en herradura para alas finitas?",
+      "answer": "Consta de componentes clave para modelar los efectos tridimensionales del ala (Downwash y Resistencia Inducida). 1) Torbellino Ligado: Reemplaza teóricamente al ala y representa su circulación de sustentación. 2) Torbellinos Libres (Punta de ala): Se desprenden hacia atrás porque el aire a alta presión del intradós escapa hacia el extradós por los extremos. 3) Torbellino Inicial (Starting Vortex): Por el Teorema de Kelvin (la circulación total debe ser nula), al arrancar el avión se empuja hacia atrás un torbellino de rotación opuesta al ligado.\n¿Por qué se estudia? Este 'sistema de herradura' cerrado permite a los aerodinamistas calcular matemáticamente (vía Biot-Savart) la velocidad del flujo inducido hacia abajo (Downwash). Al saber cómo este downwash inclina el vector de sustentación original hacia atrás, se logra calcular la Resistencia Inducida."
+    },
+    {
+      "question": "¿Cuál es la ecuación del coeficiente de resistencia inducida ($C_{Di}$) y cómo se reduce?",
+      "answer": "$C_{Di} = \\frac{C_L^2}{\\pi \\cdot A \\cdot e}$. Se reduce aumentando el alargamiento ($A$) o mejorando el factor de Oswald ($e$)."
+    },
+    {
+      "question": "¿Cuáles son los componentes de la resistencia parásita ($D_p$)?",
+      "answer": "Se divide en tres: 1) Resistencia de Fricción (por el roce viscoso del aire en la capa límite). 2) Resistencia de Forma o Presión (por la estela turbulenta generada detrás del objeto). 3) Resistencia de Interferencia (por el choque desordenado de flujos en la unión de componentes, como el ala y el fuselaje)."
+    },
+    {
+      "question": "¿Cómo retrasan la entrada en pérdida (stall) los slats (ranuras de borde de ataque)?",
+      "answer": "Las ranuras de borde de ataque (slats) retrasan la pérdida actuando como un 'soplador de capa límite'. El proceso consta de 3 fases. 1) Aprovechamiento de presiones: la mayor presión natural del intradós fuerza al aire a subir por la ranura. 2) Inyección de energía: este chorro veloz se introduce sobre el extradós aportando nueva energía cinética a la capa límite. 3) Prevención del desprendimiento: a grandes ángulos de ataque, el flujo tiende a separarse. El chorro veloz, apoyado por el efecto Coanda, lo obliga a seguir la curvatura. Resultado: permiten alcanzar enormes ángulos de ataque sin desprenderse, incrementando el coeficiente de sustentación máximo ($C_{L máx}$) y retrasando eficazmente la pérdida."
+    },
+    {
+      "question": "¿Para qué sirven los winglets instalados en las puntas de las alas?",
+      "answer": "Reducen los torbellinos de punta de ala (y el downwash), disminuyendo la resistencia inducida en un $20-25\\%$ y mejorando la fineza."
+    },
+    {
+      "question": "Explica la sustentación basándote en la 3ra Ley de Newton.",
+      "answer": "Se rige por el principio Acción-Reacción. Acción: el ala desvía una enorme masa de aire hacia abajo (Downwash). Reacción: el aire empuja el ala hacia arriba (Sustentación). El ala actúa de 'tobogán': por el Efecto Coanda (tendencia viscosa a adherirse a la curva), el aire bordea el extradós acelerándose y descendiendo en el borde de fuga. La magnitud de la sustentación es proporcional a: 1) La cantidad de masa de aire desviada (determinada por velocidad y densidad). 2) La velocidad vertical de descenso de esa masa (condicionada por el ángulo de ataque)."
+    },
+    {
+      "question": "¿En qué consiste verdaderamente el Efecto Suelo (Ground Effect)?",
+      "answer": "Es un aumento drástico de la eficiencia aerodinámica. A menos de una envergadura de altitud, el suelo bloquea el desarrollo de los torbellinos marginales y reduce fuertemente la rotación Upwash. Menos Upwash requiere menor ángulo de ataque y por consiguiente un menor Downwash de compensación. Resultado directo: reducción drástica de la resistencia inducida."
+    },
+    {
+      "question": "¿Qué fenómeno expone el Efecto Magnus en un cilindro giratorio?",
+      "answer": "Expone el concepto de Circulación del flujo ($\\Gamma$). Al girar, la viscosidad del cilindro arrastra el aire contiguo. Al sumarse con el viento externo, de un lado las velocidades se suman (alta velocidad, baja presión por Bernoulli) y del otro se restan (baja velocidad, alta presión). Esta diferencia de presiones 'aspira' al objeto, creando una fuerza transversal.",
+      "images": [
+        "/magnus_fig_3_4.png",
+        "/magnus_fig_3_5.png"
+      ]
+    },
+    {
+      "question": "Según Carmona, ¿cómo se modela la sustentación usando el concepto de circulación?",
+      "answer": "El flujo asimétrico de un perfil equivale a una corriente rectilínea sumada a un torbellino imaginario que gira a su alrededor, análogo al Efecto Magnus en un cilindro."
+    },
+    {
+      "question": "¿Qué establece la Ley de Semejanza para ensayos de túnel de viento?",
+      "answer": "Para garantizar validez, el modelo a escala en el túnel debe someterse al mismísimo **Número de Reynolds ($RN$)** que la aeronave real. Al igualar el RN garantizamos la misma proporción entre fuerzas de inercia y fricción viscosa, logrando exactitud analógica en el comportamiento de la capa límite."
+    },
+    {
+      "question": "¿Qué es el Alabeo y qué mandos controlan este movimiento?",
+      "answer": "Es la rotación sobre el eje longitudinal (nariz-cola). Se induce generando una asimetría de sustentación: un ala genera más y la otra menos. Se controla usando Alerones deflexionados en direcciones opuestas (cambiando curvaturas) o usando Spoilers en una sola ala (destruyendo sustentación)."
+    },
+    {
+      "question": "¿Cómo se define la Atmósfera Tipo Estándar (ISA)?",
+      "answer": "Es una atmósfera teórica patrón (norma de OACI) para calibrar instrumentos y estandarizar datos. A nivel del mar fija condiciones estructurales exactas: 15°C, 1013,25 hPa de presión y 1,225 kg/m³ de densidad. Dentro de la Troposfera, la temperatura desciende regularmente a razón de 1,98°C por cada 1.000 pies ascendidos."
+    }
+  ],
+  "exam_questions": [
+    {
+      "question": "Según la ecuación de Saint Venant para perfiles compresibles, ¿qué factor marca la diferencia frente a fluidos incompresibles al calcular la presión dinámica?",
+      "options": [
+        "El factor $\\frac{1}{2} M^2$",
+        "El factor $\\frac{1}{4} M^2$",
+        "El factor $1 - M^2$",
+        "El factor $\\gamma \\cdot M^2$"
+      ],
+      "correct_answer": "El factor $\\frac{1}{4} M^2$",
+      "explanation": "Al desarrollarse la ecuación, la diferencia clave entre compresible e incompresible surge del término de corrección $\\frac{1}{4} M^2$."
+    },
+    {
+      "question": "En un perfil de curvatura positiva, ¿cómo se mueve el centro de presión (c.p.) al aumentar el ángulo de ataque originando sustentación?",
+      "options": [
+        "Queda estacionario al $25\\%$ de la cuerda.",
+        "Avanza moviéndose hacia el centro aerodinámico (c.a.).",
+        "Retrocede moviéndose hacia el borde de fuga.",
+        "Pasa por delante del borde de ataque."
+      ],
+      "correct_answer": "Avanza moviéndose hacia el centro aerodinámico (c.a.).",
+      "explanation": "Al aumentar la sustentación ($C_L$), el Centro de Presión (c.p.) avanza poco a poco, intentando acercarse al Centro Aerodinámico (25%)."
+    },
+    {
+      "question": "¿Qué le ocurre matemáticamente a la resistencia inducida ($C_{Di}$) si se aumenta la sustentación ($C_L$) al doble?",
+      "options": [
+        "Se reduce a la mitad.",
+        "Se duplica linealmente.",
+        "Permanece constante.",
+        "Aumenta cuatro veces."
+      ],
+      "correct_answer": "Aumenta cuatro veces.",
+      "explanation": "Como la resistencia inducida es proporcional al cuadrado del $C_L$ ($C_L^2$), si lo duplicamos al coeficiente, la resistencia se multiplicará por cuatro."
+    },
+    {
+      "question": "Sobre la capa límite, ¿cuál de los dos tipos resulta superior para retrasar la entrada en pérdida a altos ángulos?",
+      "options": [
+        "Laminar, porque su falta de mezcla y menor espesor la hace fluir mejor en el extradós.",
+        "Turbulenta, porque al mezclarse retiene mayor espesor pero empuja al flujo impidiendo la pérdida prematura.",
+        "Laminar, porque evita la creación de estelas termodinámicas tempranas.",
+        "Turbulenta, ya que al mezclar partículas renueva la energía de las capas bajas, soportando gradientes de presión adversos y retrasando su separación."
+      ],
+      "correct_answer": "Turbulenta, ya que al mezclar partículas renueva la energía de las capas bajas, soportando gradientes de presión adversos y retrasando su separación.",
+      "explanation": "La capa fluida turbulenta se mezcla continuamente, trayendo energía cinética a las capas bajas. Resulta ser excelente absorbiendo subidas de presión en el lomo alar, impidiendo un desprendimiento prematuro (Pérdida)."
+    },
+    {
+      "question": "¿Cómo operan físicamente los slats (ranuras del borde de ataque) para aumentar el ángulo límite de pérdida?",
+      "options": [
+        "Agregan curvatura masiva en todo caso para evadir la turbulenta turbillonaria límite.",
+        "Re-energizando la capa límite inyectando una masa de aire fresco de alta presión originada desde el intradós directamente hacia el extradós.",
+        "Incrementan agresivamente el escape empujando en el extradós toda la componente de presiones hidrostáticas.",
+        "Destruyen la sustentación al actuar mecánicamente en conjunción al despliegue masivo y freno de alerones en cruz."
+      ],
+      "correct_answer": "Re-energizando la capa límite inyectando una masa de aire fresco de alta presión originada desde el intradós directamente hacia el extradós.",
+      "explanation": "La ranura sirve de túnel que sopla aire a alta velocidad renovando y dándole vitalidad a la cansada capa límite del extradós superior para aguantar ángulos de ataque severos."
+    },
+    {
+      "question": "En referencia de su concepción puramente newtoniana (Tercera Ley: Acción/Reacción). ¿De qué depende la magnitud neta al originar la fuerza de sustentación?",
+      "options": [
+        "Del incremento masivo de la pérdida termodinámica o caída perimetral adherida al lomo estandarizado en la línea turbulenta.",
+        "Del flujo re direccionado de masa pura por torsión estructural.",
+        "Exclusivamente de la cantidad global y volumen de la masa interceptada de aire, controlando la velocidad y aceleración pura con la que ese aire desciende tras su borde (Downwash).",
+        "A de la componente paralela a la flecha e inflexiones asimétricas termales del ala subyacente subsónica."
+      ],
+      "correct_answer": "Exclusivamente de la cantidad global y volumen de la masa interceptada de aire, controlando la velocidad y aceleración pura con la que ese aire desciende tras su borde (Downwash).",
+      "explanation": "Tal bomba de empuje de aire: al tirar el aire hacia abajo agresivamente (Acelerado a causa del Downwash alar), ese mismo bloque devuelto en forma de masa produce el empuje de Reacción total llamado fuerza Sustentadora (Levante)."
+    },
+    {
+      "question": "¿Cuál resulta ser la causa precisa que reduce severamente la Resistencia Inducida produciendo la ventaja del llamado ('Efecto Suelo')?",
+      "options": [
+        "La creación del volumen de altísima compresión o el famosísimo colchón hidrostático virtual debajo del alerón o superficie intrados del aeroplano.",
+        "Se elimina el ángulo efectivo por bloqueo estructural inducente sobre todos los torbellinos del ala en velocidad horizontal crucero estable.",
+        "Al pisar o aproximarse fuertemente el suelo sólido bloquea la expansión de los grandes torbellinos de la punta del ala (margen), requiriendo mucho menos Downwash, cancelando por ello mismo arrastre inútil inducido.",
+        "Altera instantáneamente los influjos paralelos neutralizando factores limitantes paramétricos al re equilibrar los números viscosos (salto Mach o Ley isoentrópico de Re)."
+      ],
+      "correct_answer": "Al pisar o aproximarse fuertemente el suelo sólido bloquea la expansión de los grandes torbellinos de la punta del ala (margen), requiriendo mucho menos Downwash, cancelando por ello mismo arrastre inútil inducido.",
+      "explanation": "Contrario al mito del colchón que apoya el fuselaje, la realidad radica en la interrupción rotunda del terreno ante la enorme creación torbellinar (y con ella del perjudicial e insensato Downwash) que frenaba inútilmente la progresión del aeroplano."
+    },
+    {
+      "question": "A nivel utilitario en los túneles aerodinámicos de ensayo (para maquetas limitadas), ¿Qué se exige matemáticamente obtener con el protocolo denominado 'Ley de Semejanza'?",
+      "options": [
+        "Emparejar con exactitud al factor o 'Número Dinámico Reynolds ($RN$)' con los de la futura aeronave diseñada a tamaño estándar. Permitirá obtener desprendimientos extrapolables fielmente y predecir lo mismo que en estado aéreo real puro.",
+        "Garantizar estabilidades e invalidaciones físicas contra calentamientos críticos resultantes al someterlo y empujar su barrera subsónica y perfiles hipersónicos (Mach 1.5).",
+        "Medir solo los desarrollos asimétricos referidos transversalmente bajo el empuje diferencial de ráfagas cruzando las secciones sin alterar parámetros termodinámicos.",
+        "Evadir la comprobación asimétrica por medio de la calibración hidroestática en perfiles asimétricos rotular turbulencias."
+      ],
+      "correct_answer": "Emparejar con exactitud al factor o 'Número Dinámico Reynolds ($RN$)' con los de la futura aeronave diseñada a tamaño estándar. Permitirá obtener desprendimientos extrapolables fielmente y predecir lo mismo que en estado aéreo real puro.",
+      "explanation": "Mantener al Número Reynol ($RN$) matemáticamente idéntico y parejo garantiza obtener interacciones, viscosidades y comportamientos extrapolables directamente de una maquetilla minúscula a un diseño verdadero comercial real."
+    },
+    {
+      "question": "En base al modelo ISA o Atmósfera Tipo Estándar, ¿Cómo se determina el descenso en Temperatura y qué media inicial se le atribuye sobre el nivel puro del mar?",
+      "options": [
+        "Una medida de confort variable (generalmente 20° o 22°C fijada desde nivel mar) incrementándose medio grado al ascender elevación superior pre establecida (cada kilometro de Troposfera).",
+        "Es un postulado fijo a nivel costa inicial de 15°C puros. La temperatura decrecará rígidamente e inalterablemente progresiva a -20°C tras rebasar la marca superior estratosférica.",
+        "Tiene estipulado los 15°C a nivel del Océano promedio, con rígidamente una estricta pauta regular de decrecimiento constante valuado en 1,98°C por los respectivos miles de pies ascensos en las capas de troposfera.",
+        "Fijación lineal sin variar. Asume -55° C al rebasar alturas de la baja estratosfera reduciendo variaciones de escala o saltos y anomalías en vuelos estandarizados a cero por la fricción."
+      ],
+      "correct_answer": "Tiene estipulado los 15°C a nivel del Océano promedio, con rígidamente una estricta pauta regular de decrecimiento constante valuado en 1,98°C por los respectivos miles de pies ascensos en las capas de troposfera.",
+      "explanation": "Bajo la regla dictaminada Internacional (ISA) en la primer capa u horizonte la cuenta asume salir con 15° Grados al océano, descendiendo parejos y clavados ~2°C gradientes exactos (1,98) al ir escalando a millares los pies recorridos verticales."
+    },
+    {
+      "question": "Desarrolla paso a paso el mecanismo por el cual las ranuras de borde de ataque (slats) logran retrasar la pérdida de sustentación (stall).",
+      "correct_answer": "Actúan como un 'soplador de capa límite' en 3 fases: 1) La mayor presión del intradós fuerza al aire a subir por la ranura. 2) Este flujo se inyecta a alta velocidad sobre el extradós aportando energía cinética. 3) Esta energía, ayudada por el Efecto Coanda, fuerza a la capa límite a mantenerse adherida a la curvatura del ala incluso a altos ángulos de ataque, retrasando así el desprendimiento.",
+      "explanation": "La clave está en no olvidar mencionar las diferencias de presión (intradós/extradós), la inyección de energía cinética y el Efecto Coanda manteniendo el flujo adherido."
+    },
+    {
+      "question": "Explica la generación de sustentación utilizando la 3ra Ley de Newton y el Efecto Coanda. ¿De qué factores depende su magnitud?",
+      "correct_answer": "El ala viscosamente desvía el aire hacia abajo (Acción = Downwash) siguiendo el principio Coanda sobre el extradós curvo. Como Reacción, esa inmensa masa desplazada empuja al ala hacia arriba. La magnitud depende directamente de la cantidad de MASA de aire desviada (afectada por densidad y velocidad) y su VELOCIDAD vertical de descenso (afectada por el ángulo de ataque).",
+      "explanation": "Es fundamental integrar acción-reacción, evidenciar a Coanda como el 'pegamento' que dobla el flujo y detallar masa y velocidad de descenso."
+    },
+    {
+      "question": "Analiza conceptualmente el 'Sistema de Torbellinos de Herradura' aplicado a un ala finita. ¿Qué tres componentes lo conforman y por qué es fundamental su estudio teórico?",
+      "correct_answer": "Se compone de: 1) Torbellino Ligado (representa el ala y la circulación de sustentación). 2) Torbellinos Libres (en las puntas de ala, por la fuga de presión del intradós al extradós). 3) Torbellino Inicial (por el T. de Kelvin, lanzado hacia atrás al inicio). Se estudia teóricamente porque cerrando el esquema podemos calcular vía Biot-Savart la velocidad y ángulo exacto del Downwash (flujo inducido), lo que permite deducir con exactitud la magnitud de la Resistencia Inducida que penaliza el empuje.",
+      "explanation": "Conceptos esperados: Ligado, Libres, Inicial (Kelvin). Su propósito fundamental: lograr calcular matemáticamente el downwash y, consecuentemente, la maldita resistencia inducida."
+    },
+    {
+      "question": "Desarrolle el concepto de Efecto Suelo (Ground Effect) explicando sus causas puras y consecuencias aerodinámicas.",
+      "correct_answer": "El efecto suelo ocurre al volar muy cerca de la superficie, donde el terreno físico bloquea la expansión natural de los grandes torbellinos de punta de ala. Esto disminuye dramáticamente el ángulo del downwash y, como consecuencia directa, cancela o reduce de forma drástica la resistencia inducida, aumentando la eficiencia aerodinámica temporalmente de una forma abrupta.",
+      "explanation": "Exigí que conectes el bloqueo de los torbellinos y del downwash, ya que sin él no se logra comprender el alivio en la Resistencia Inducida."
+    },
+    {
+      "question": "Explique exhaustivamente y marque la diferencia principal entre los dos conceptos vitales: Sustentación y Resistencia Aerodinámica.",
+      "correct_answer": "La sustentación es la fuerza perpendicular al flujo relativo que levanta a la aeronave venciendo la gravedad; es puramente deseable. La resistencia es estricta e inevitablemente la fuerza paralela y opuesta a la trayectoria del vuelo que frena a la nave vencida solo por tracción. Mientras una nos mantiene arriba y es buscada como producto aerodinámico, la segunda es estrictamente un costo parasitario insalvable (salvo que sea minimizada al límite).",
+      "explanation": "El foco acá es: Vectores (Perpendicular vs Paralelo) empujando a tu entendimiento analítico."
+    },
+    {
+      "question": "Desarrolle profundamente: ¿Por qué razón física exacta se origina y nace la Sustentación?",
+      "correct_answer": "La sustentación nace de obligar al aire a modificar su ruta. Según Newton, si el flujo es doblado y empujado hacia abajo (Downwash) inducido por el Efecto Coanda (tendencia fluida viscosa de rodear superficies por más curvas que sean), habrá una reacción directa del fluido hacia el cielo, impulsando el fuselaje y sus perfiles alares. Equivalentemente, por conservación total, Bernoulli nos prueba que la mayor aceleración superior de esas corrientes le quita presión a la balanza, desequilibrando el estado a una 'succión'.",
+      "explanation": "Acordate las capas profundas: Acción y Reacción forzada (mucha masa guiada hacia abajo es igual a ser tironeado hacia el aire). Coanda y Bernoulli se respaldan el uno al otro en esta danza."
+    },
+    {
+      "question": "Desarrolle la respuesta real. ¿Por qué razón física y de flujos se origina y nace la Resistencia Total de un cuerpo?",
+      "correct_answer": "La Resistencia (o arrastre absoluto) cobra tributo de dos vertientes: El lado Parásito nace por roces ásperos de fricción pura de las moléculas ensuciando la envoltura (Capa Límite), y a la vez, el choque y separación brutal en formas anti-aerodinámicas que desencadena zonas muertas o 'estelas de presión baja'. La vertiente restante nace mágicamente junto a la deseada elevación (Resistencia Inducida): Es inevitable por inclinar torpemente tu propio empuje gracias a que el Downwash tira de las cuerdas de las puntas empujando al vector original un poco hacia atrás.",
+      "explanation": "Debes mencionar la división de Resistencia por contacto físico rocoso (fricción y forma inútil) y el costo inevitable de generar elevación en un mundo 3D empujando las matrices para atrás (inducida)."
+    },
+    {
+      "question": "Puntualice la explicación más técnica de la Resistencia Inducida. ¿Qué relación directa sostiene con velocidades y las vórtices de punta?",
+      "correct_answer": "La resistencia inducida emerge sin falta simplemente por producir el vuelo (solo en alas con final). Se dispara porque el escape desde debajo (presión alta hacia arriba) arma enormes rolos de turbulencia (Torbellinos de punta de ala), inyectando una ráfaga que inclina el flujo vertical empujándolo hacia abajo. El engaño está en la velocidad: volar recontra lento empeora severamente esto dándole a la punta del ala tiempo para armar vórtices ciclópeos y pesadísimos; volar súper rápido afina la estela aplacando la magnitud del arrastre parasitario derivado a tal fin.",
+      "explanation": "¡La trampa típica está en la velocidad! Mientras vayas más rápido esquivas la inducida y mientras frenes te frena."
+    },
+    {
+      "question": "Explique el principio matemático de Bernoulli en el contexto regido de un fluido incompresible. ¿Qué sucede al cruzar un estrechamiento?",
+      "correct_answer": "Su ley pauta la constancia o conservación milimétrica e inquebrantable de energías: La Presión Estática pura más la componente de Presión Dinámica (1/2 ρ V^2) no pueden crear ni destruir fuerzas de su interior equilibrado. En traducción pura, al someter fluidos incompresibles por túneles ajustados y acortados deberán ganar agilidad veloz obligatoriamente (continuidad). Para sufragar ese incremento o pico cinético, las atmósferas le exigen bajar y exprimir el pozo interno de sus Presiones Estáticas puras.",
+      "explanation": "Es vital remarcar el intercambio: a más dinámica compensas y perdés inmediatamente estática."
+    },
+    {
+      "question": "Defina exactamente el Centro de Presión (CP) en perfil de ala. Describa cómo reacciona en alas asimétricas al mover los mandos.",
+      "correct_answer": "El Centro de Presión pisa exacto al ubicarse en un punto abstracto sobre la misma cuerda, donde virtualmente se enfoca de modo único uniendo todas las resultantes aerodinámicas a favor. La magia está en un perfil con curvaturas, si tú elevás en exceso el labio o ángulo atacante, este punto mágico camina álgido escapando para el frente (borde de ataque); y se refugia veloz en retirada hacia atrás si relajas abruptamente reduciendo los ángulos de choque.",
+      "explanation": "Recordá la marcha oscilante según el ángulo en cuerdas curvas y que este vaivén trae dolor de cabeza por inestabilidad."
+    },
+    {
+      "question": "Defina matemáticamente al Centro Aerodinámico (CA) o foco. ¿En qué difiere estrictamente y porque salva la vida al evitar el CP?",
+      "correct_answer": "Lograr domar los cálculos obligó a encontrar al Centro Aerodinámico, el cual es inamovible (usualmente al exacto 25% distanciado del frente a vuelo normal). Es el punto exacto bajo los confines aéreos que hace constante y neutro al coeficiente del momento cabeceador, importando muy poco cómo inclines y tuerzas rígidamente al plano (AOA). A diferencia del CP movedizo e inseguro para armar peso, disponer el CA estacionario y equilibrado sirve a rajatabla en ubicar donde balancear y atar el verdadero Centro de Gravedad.",
+      "explanation": "El CA fija momento continuo sin importar el ángulo lo que da seguridad suprema."
+    },
+    {
+      "question": "Desarrolle exhaustivamente las variables del 'Alabeo' o Roll. Indique su eje cruzado, y sus inductores.",
+      "correct_answer": "Girar como en espiral a lo largo del fuselaje o rotar el Ala dictamina rodar estrictamente sobre la línea longitudinal del morro a la cola. Su nacimiento nace inalterable si alteras simetrías; a uno de tus mandos delgados (alerones) lo empujas hacia arriba eliminando brutal choque y bajando fuertemente tu otro flanco, exprimiendo artificialmente pura energía del otro. Ese flanco alzado es jalado provocando la maniobra de volcado a la vista. Como asistencia destructora también te proveen Spoilers (rompedores) matando bruscamente toda la fuerza desde el extradós obligándose a volcar del igual modo.",
+      "explanation": "Entender la asimetría lograda al forzar alerones en contraposición o devaluar pura fuerza cortando un flujo."
+    },
+    {
+      "question": "En el túnel de viento limitante, explaye en profundo porqué la 'Ley de Semejanza' obliga el cumplimiento fiel del Número de Reynolds.",
+      "correct_answer": "No sirve llevar maquetas sin matemáticas y esperar milagros visuales. La ley de Semejanza amarra y empareja exactitudes físicas ineludibles obligando un testeo que soporte iguales y exactos coeficientes libres (magnitudes de roces densos viscosos limitantes comparando puras potencias brutas inerciales del entorno simulado). Únicamente al obligarlo a coincidir (Semejanza), al Número de Reynolds (RN), garantizamos no equivocarnos en predecir que capas estelares romperán de modos iguales (punto de stall, laminar estancado y turbulento al arrastar). Si difieren estarías prediciendo engañosos futuros fatales.",
+      "explanation": "Debes ligarlos juntos. Semejanza te rige. Reynolds te evalúa los roces. Sin la mezcla tu prueba y escala falla en presiones."
+    },
+    {
+      "question": "Hablando minuciosamente de los Sistemas de Torbellinos, defina desde punto a raya la aparición de Torbellinos Libres y el Inicial Obligatorio.",
+      "correct_answer": "Más allá del modelo atado (Torbellino Ligado falso para emular giro ascendente), la gran verdad irrumpe porque el aire aplastante rompe escapando por rebalse al extradós al llegar libre a la punta de margen. Dicha fuga enrollante dibuja gruesos y despegados ciclones que viajan al desvío estelar tras la aeronave arrastrándose al eterno fin (Libres). Por contrapeso de balanzas e inicios forzados se dicta sin chistar por la ley teórica circulatoria universal (Kelvin) que a la hora misma y momento que giraste artificial en fuerza mayor (Ligado) un escape reactivo empuja otra fuerza similar a espaldas girando inverso naciendo muerto atrás del avión por mera compensación del arranque mismo (Inicial).",
+      "explanation": "Diferenciar bien Punta Libre escapada, de Inicial/Arranque exigido matemáticamente por Kelvin a la hora de volar."
+    }
+  ],
+  "study_methodology": {
+    "recommended_pomodoro": "4 micro-sesiones de 15 minutos con retroalimentación inmediata, en lugar de 1h continua.",
+    "surprise_exam_frequency": "Quizzes continuos formativos después de cada micro-sesión de 15 minutos.",
+    "mastery_metrics": [
+      {
+        "level": "0-25%",
+        "name": "Adquisición",
+        "desc": "Seguir ejemplos resueltos sin sobrecarga."
+      },
+      {
+        "level": "26-50%",
+        "name": "Transición",
+        "desc": "Resolver problemas con asistencia decreciente."
+      },
+      {
+        "level": "51-75%",
+        "name": "Aplicación Numérica",
+        "desc": "Fluidez derivando ecuaciones y análisis dimensional."
+      },
+      {
+        "level": "76-100%",
+        "name": "Dominio Experto",
+        "desc": "Técnica de Feynman y aplicación a casos nuevos."
+      }
+    ],
+    "study_tips": [
+      "Leer en voz alta te ayuda a procesar la información por dos canales visual y auditivo, reforzando la memoria.",
+      "La constancia vence a la intensidad. Pequeñas sesiones espaciadas son mejor que maratones de estudio.",
+      "Intenta explicar lo que acabas de aprender como si se lo enseñaras a un niño (Técnica Feynman).",
+      "Asociar conceptos complejos a ejemplos de la vida real facilita recordarlos en los exámenes.",
+      "El descanso es cuando tu cerebro consolida lo aprendido. ¡No te saltes tus pausas!",
+      "La hidratación es clave para la concentración. Aprovecha este momento para tomar un poco de agua."
+    ]
+  }
+}
